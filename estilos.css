@@ -1,0 +1,181 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ @import url(root.css);
+ 
+ 
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/* 
+layout 
+
+*/
+body{
+  display: grid;
+  grid-template-columns: 240px 1fr ;
+  grid-template-rows: 56px 1fr;
+  grid-template-areas: 
+  'header header '
+  'sidebar  main ';
+  height: 100vh;
+}
+/* img se totaliza para todas las imagenes  */
+/* trabajar con selectores  ayuda a "generializar" esas etiqeutas en todo. */
+img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+a{
+  text-decoration: 
+  none;
+  font-size: 0.9rem;
+  
+}
+h1{
+  font-size: 1.5rem;
+}
+.header{
+  grid-area: header;
+  background-color: var(--negro );
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  
+
+}
+/* primer div : el cual son todos los que estan en el header , que es el principal.Un agrupamiento */
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+.logo-container a{
+  border-radius: 50%;
+  min-width: 30px;
+  height: 25px;
+  
+  justify-content: center;
+ 
+
+}
+.icono{
+  color: var(--blanco);
+  font-size: 20px;
+}
+.logo-container a:hover{
+ 
+  background-color: #313131;
+
+}
+.logo-img{
+  position: relative;
+  height:25px ;
+  width: 30px;
+}
+.logo{
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+}.logo h1{
+  /* con letter podemos pear o alejar el espacio  de las letras ,ejemplo , -1px se pegan mas letras y si aumentamos se espaciaran mas o se alejaran mas  */
+  letter-spacing: 2px;
+  color: var(--blanco);
+  
+}
+/* segundo contenedor  */
+.busqueda-container{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  /* factor de crecimiento y decrecimiento y la primera es de lo que va crecer , en este caso , seria 685px. con flex se simplifica estas tres prpiedades  */
+  flex-basis: 685px;      
+  flex-grow: 0;
+  flex-shrink:1 ;
+}
+.busqueda-container form {
+
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.busqueda-container input{
+  height: 40px;
+  width: 100%;
+  background-color: #121212;
+  color: #f2f2f2;
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(255, 255,255,0.1);
+  border-radius: 10px  0px  0px 10px;
+}
+.busqueda-container button{
+  width: 40px;
+  height: 40px;
+  background-color: #313131;
+  color: var(--blanco);
+  outline: none;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+/* dentro del elemento padre busca la etiqueta form y  la tildesita ayud abuscar el hermano de button or fuera de la etiqueta form  */
+form ~button:last-of-type {
+  min-width: 40px;
+  border-radius: 50%;
+
+
+}
+
+/* tercer container  */
+.perfil-container  {
+  display: flex;
+  align-items: center;
+  gap:25px;
+  justify-content: space-between;
+
+}
+.perfil-container a {
+  background-color: #313131;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s;
+
+}
+.perfil-container a:hover{
+ background-color: #494949; 
+}
+.foto{
+ position: relative;
+ height: 45px;
+ width: 45px;
+ border-radius: 50px;
+}
+
+
+.sidebar{
+  grid-area: sidebar;
+
+}
+.content{
+  grid-area: main;
+}
