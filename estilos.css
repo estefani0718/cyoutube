@@ -231,16 +231,6 @@ form ~button:last-of-type {
   
 }
 
-
-
-
-
-
-
-
-
-
-
 .content{
   grid-area: main;
 }
