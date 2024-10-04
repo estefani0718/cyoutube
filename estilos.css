@@ -20,6 +20,7 @@ body{
   'header header '
   'sidebar  main ';
   height: 100vh;
+
 }
 /* img se totaliza para todas las imagenes  */
 /* trabajar con selectores  ayuda a "generializar" esas etiqeutas en todo. */
@@ -189,7 +190,18 @@ form ~button:last-of-type {
   grid-area: sidebar;
   background-color: #121212;
   padding-top: 10px;
+  overflow-y: scroll;
 
+}
+::-webkit-scrollbar{
+ width: 8px;
+} 
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background-color: #717171;
 }
 .sidebar-items{
   display: flex;
