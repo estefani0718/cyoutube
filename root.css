@@ -1,9 +1,26 @@
 
 :root
 {
+
+
+
+
+
+
+
+  /* espacios */
+
+  /* tamaños */
+  --absoluto:absolute;
+
+  /* iconos */
+  
+
+  /* colores  */
   --negro:#000;
   --blanco:#fff;
- --gris:#5D6363;
+  --gris:#5D6363;
+
 
 
 }
