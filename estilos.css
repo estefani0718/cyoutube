@@ -65,7 +65,7 @@ p{
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  
+  gap: 10px;
 
 }
 /* primer div : el cual son todos los que estan en el header , que es el principal.Un agrupamiento */
@@ -79,9 +79,7 @@ p{
   border-radius: 50%;
   min-width: 30px;
   height: 25px;
-  
-  justify-content: center;
- 
+  padding:0 5px;
 
 }
 .icono{
@@ -148,6 +146,10 @@ p{
   font-size: 15px;
 
 }
+form~button:hover{
+  background-color: #313131;
+  transition: 0s;
+}
 /* dentro del elemento padre busca la etiqueta form y  la tildesita ayud abuscar el hermano de button or fuera de la etiqueta form  */
 form ~button:last-of-type {
   min-width: 40px;
@@ -207,8 +209,8 @@ form ~button:last-of-type {
 .sidebar-items{
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-  /* margin: 10px; */
+  /* padding: 0 15px; */
+
 
 }
 .sidebar-items span{
@@ -222,7 +224,7 @@ form ~button:last-of-type {
   display: flex;
   align-items: center ;
   border-radius: 10px;
-  transition: 1s;
+  transition: 0.5s;
 }
 .sidebar-item i{
   margin-left: 20px;
@@ -268,6 +270,7 @@ form ~button:last-of-type {
  background-color:#717171;
   
 }
+/* segundo container  */
 .video-container{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
@@ -343,4 +346,31 @@ form ~button:last-of-type {
 }
 .upload{
   margin-left: 5px;
+}
+@media(max-width:1200px){
+
+  body{
+    grid-template-columns: 70px 1fr ;
+  }
+  .sidebar-item span,  h4{
+    display: none;
+
+  }
+  .sidebar-items{
+    padding: 0;
+  }
+  .sidebar-item{
+    padding: 0 10px;
+    justify-content: center;
+   
+  }
+  .chips-warpper{
+    max-width:calc();
+  }
+
+}
+@media(max-width:800px){
+  .busqueda-container{
+    display: none;
+  }
 }
