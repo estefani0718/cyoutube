@@ -3,45 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YOUTUBE</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Youtube</title>
+  <link rel="stylesheet" href="css/estilos.css">
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
-/>
+  />
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
   <!-- header:principal encabezado  -->
   <header class="header">
-    <div class="logo-container">
-      <a href="#" class="icono">
-         <i class="ri-menu-line "></i>
+    <div class="header__container">
+      <a href="#" class="header__icono  ">
+         <i class="ri-menu-line header__icono-menu--cambio icono"></i>
       </a>
-     <div class="logo">
-       <div class="logo-img">
-         <img src="logo.png" alt="logo">
+     <div class="header__logo">
+       <div class="header__logo-img">
+         <img src="logo.png" alt="logo" class="imagen">
         </div>
-        <h1>Youtube </h1>
+        <h1 class="header__text">Youtube </h1>
       </div>
     </div>
+
     <!-- contenedor de busqueda  -->
-    <div class=busqueda-container>
-      <form action="">
-        <input type="text" placeholder="Buscar">
-        <button>
-          <i class="ri-search-line"></i>
+    <div class= "busqueda__container ">
+      <form action="" class="busqueda__container-form">
+        <input type="text" placeholder="Buscar" class="busqueda__container__caja-busqueda">
+        <button class="button">  
+          <i class="ri-search-line icono"></i>
         </button>
       </form>
-      <button>
-        <i class="ri-mic-line"></i>
+      <button class="button">
+        <i class="ri-mic-line icono"></i>
       </button>
     </div>
+
     <!-- contenedor perfil -->
     <div class="perfil-container ">
-      <a href="#">
+      <a href="#" class="perfil__icono">
         <i class="ri-video-add-line icono" ></i>
       </a>
-      <a href="#">
+      <a href="#" class="perfil__icono">
         <i class="ri-notification-line icono"></i>
       </a>
       <div class="foto">
@@ -50,81 +53,83 @@
     </div>
 
   </header>
+
   <!-- sidebar:lado lateral izquierdo  -->
+
   <aside class="sidebar">
-    <div class="sidebar-items">
-      <a href="" class="sidebar-item">
-        <i class="ri-home-line icono"></i>
-       <span>Home</span>
+    <div class="sidebar__items">
+      <a href="" class="sidebar__item">
+        <i class="ri-home-line icono "></i>
+       <span >Home</span>
       </a>
-      <a href="" class="sidebar-item">
+      <a href="" class="sidebar__item">
         <i class="ri-compass-3-line icono"></i>
         <span>Explore</span>
       </a>
-      <a href="" class="sidebar-item">
+      <a href="" class="sidebar__item">
         <i class="ri-wireless-charging-line icono"></i>
         <span>Shorts</span>
       </a>
-      <a href="" class="sidebar-item">
+      <a href="" class="sidebar__item">
         <i class="ri-rss-line icono"></i>
         <span>Subcrptions</span>
       </a>
 
       <hr>
-      <a href="" class="sidebar-item">
+      <a href="" class="sidebar__item">
         <i class="ri-links-line icono"></i>
        <span>Library</span>
      </a>
-      <a href="" class="sidebar-item">
+      <a href="" class="sidebar__item">
         <i class="ri-history-line icono"></i>
        <span>History</span>
      </a>
-      <a href="" class="sidebar-item">
+      <a href="" class="sidebar__item">
         <i class="ri-video-line icono"></i>
        <span>Your Videos</span>
      </a>
-      <a href="" class="sidebar-item">
+      <a href="" class="sidebar__item">
         <i class="ri-time-line  icono "></i>
        <span>Watch Videos</span>
      </a>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-play-list-2-line icono"></i>
        <span>All Video</span>
      </a>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-arrow-down-fill icono"></i>
        <span>Show more</span>
      </a>
-     <hr>
-     <h4>MORE FROM YOUTUBE</h4>
+     <hr >
+     <h4 class="sidebar__text">MORE FROM YOUTUBE</h4>
 
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-keyboard-box-line icono"></i>
        <span>Gaming</span>
      </a>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-live-line icono "></i>
        <span>live</span>
      </a>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-award-line icono"></i>
        <span>Sports</span>
      </a>
      
      <hr>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-settings-2-line icono "></i>
        <span>Setting</span>
      </a>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-flag-line icono"></i>
        <span>Report history </span>
      </a>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
        <i class="ri-question-line icono "></i>
        <span>Help</span>
      </a>
-     <a href="" class="sidebar-item">
+     <a href="" class="sidebar__item">
         <i class="ri-feedback-line icono"></i>
        <span>Send feedack</span>
      </a>
@@ -133,10 +138,11 @@
 
     </div>
   </aside>
+   
   <!-- main:contenido principal  -->
   <main class="content">
     <!-- primer contenedor  -->
-    <div class="chips-warpper">
+    <div class="content__chips-warpper">
       <div class="chips">
         <p>All</p>
       </div>
@@ -183,496 +189,513 @@
         <p>UML</p>
       </div>
       </div>
-      <div class="video-container">
+      <div class="video__container">
 
 
 
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-1.jpg" alt="video">
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-1.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-2.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-2.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-3.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-3.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-4.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-4.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-5.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-5.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-6.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-6.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-7.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-7.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-8.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-8.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-9.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-9.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-10.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-10.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-11.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-11.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-12.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-12.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-13.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-13.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-14.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-14.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-15.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-15.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-16.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-16.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-17.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-17.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-18.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-18.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-20.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-19.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-21.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-20.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-         <div class="video-container-cover">
-          <div class="video-content">
-            <a href="#" class="video-box">
-              <img src="img/img-22.jpg" alt="video">
+        
+        <div class="video__container-cover">
+          <div class="video__content">
+            <a href="#" class="video__box ">
+              <img src="img/img-21.jpg" alt="video " class="imagen">
             </a>
           </div>
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo">
+          <div class="video__detail">
+            <div class="video__chanel-logo">
+              <img src="https://i.pinimg.com/564x/3a/77/7a/3a777ad47832e88b3c8376eaf6cbff2b.jpg"alt="logo" class="imagen">
             </div>
             <div class="detail">
-              <h3 class="title"> Clon Youtube Flexbox and Grid
+              <h3 class="video__title"> Clon Youtube Flexbox and Grid
               </h3>
-              <div class="chanel-name">
+              <div class="video__chanel-name">
                 estefani estupiñan
               </div>
-              <div class="views-upload">
+              <div class="video__views-upload">
                 <div class="views">280 views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
-        </div>
-
-
-
+        
       </div>
       
       

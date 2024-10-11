@@ -1,0 +1,62 @@
+
+:root
+{
+  
+
+
+
+
+
+
+  /* espacios */
+  --separacion_letras: 2px;
+  --gap1_separacion:10px;
+  --gap2_separacion:5px;
+  --gap3_separacion:6px;
+  --gap_separacion:25px;
+  --gap5_separacion:12px;
+  --separacion_padding1:5px 6px;
+  --separacion_padding2:12px;
+  --separacion_padding3:15px;
+  --separacion_margin-left:20px;
+ 
+  /* posiciones */
+  --position1:absolute;
+  --position2:fixed;
+  --position3:relative;
+
+  /* colores  */
+  --negro:#000;
+  --negro_2:#121212;
+  --negro_3:#181818;
+  --blanco:#fff;
+
+  --gris:#5D6363;
+  --gris_color:#717171;
+
+  --color_nuevo:#aaa;
+  --color_nuevo2:#373737;
+  --color_base_iconos:#313131;
+  --color_trasparencia_icono:#494949;
+  --color_blanquito: #f2f2f2 ;
+  --color_backg:transparent;
+  
+ /* tamaños de letras */
+ --segundo_tamañoletra:1.5rem;;
+ --primer_tamaño_letra:1rem;
+ --tercer_tamaño:15px;
+ --cuarto_tamaño_pequeño:0.9rem;
+
+ /* border */
+ --borde_neutro:1px solid rgba(255, 255,255,0.1);
+ --border_medidas1:0px  0px  0px 10px;
+  /* direccion flujo  */
+  --now_rap:nowrap;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}

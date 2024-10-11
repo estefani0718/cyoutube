@@ -1,0 +1,33 @@
+ @import url(root.css);
+ @import url(sidebar.css);
+ @import url(content.css);
+ @import url(media_queries.css);
+
+
+@media(max-width:1200px){
+
+    body{
+      grid-template-columns: 70px 1fr ;
+    }
+    .sidebar__item span,  h4{
+      display: none;
+  
+    }
+    .sidebar__items{
+      padding: 0;
+    }
+    .sidebar__item{
+      padding: 0 10px;
+      justify-content: center;
+     
+    }
+    .content__chips-warpper{
+      max-width:calc();
+    }
+  
+  }
+  @media(max-width:800px){
+    .busqueda__container{
+      display: none;
+    }
+  }

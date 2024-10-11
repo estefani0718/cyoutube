@@ -1,0 +1,64 @@
+ @import url(root.css);
+ @import url(sidebar.css);
+ @import url(content.css);
+ @import url(media_queries.css);
+
+
+
+/* 2  */
+.sidebar{
+    grid-area: sidebar;
+    background-color: var(--negro_2);
+    padding-top: 10px;
+    overflow-y: scroll;
+  
+}
+::-webkit-scrollbar{
+   width: 8px;
+   height: 8px;
+} 
+::-webkit-scrollbar-thumb{
+    background-color: var(--color_backg);
+    border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb
+{
+    background-color: var(--gris_color);
+}
+.sidebar__items {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+.sidebar__items span
+{
+    color: var(--blanco);
+    padding: var(--separacion_padding3);
+    
+    
+}
+.sidebar__item {
+    height: 40px;
+    display: flex;
+    align-items: center ;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.sidebar__items i{
+    margin-left: 20px;
+}
+.sidebar__item:hover{
+    background-color: var(--color_baase_iconos);
+    
+}
+hr{
+    border: var(--borde_neutro);
+    margin: 12px 0 ;
+}
+.sidebar__text{
+    font-size: var(--cuarto_tamaño_pequeño);
+    text-transform: uppercase;
+    color: var(--color_nuevo);
+    margin-left: var(--separacion_margin_left);
+}
